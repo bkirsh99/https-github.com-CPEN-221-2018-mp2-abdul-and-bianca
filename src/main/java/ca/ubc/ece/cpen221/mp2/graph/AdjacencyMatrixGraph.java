@@ -63,8 +63,7 @@ public class AdjacencyMatrixGraph implements Graph {
         if(referenceforVertex.containsKey(v1) && referenceforVertex.containsKey(v2)){
             matrix[referenceforVertex.get(v1)][referenceforVertex.get(v2)] = 1;
             matrix[referenceforVertex.get(v2)][referenceforVertex.get(v1)] = 1;
-        }
-        else{
+        } else{
             if(!referenceforVertex.containsKey(v1)){
                 addVertex(v1);
             }

@@ -240,17 +240,13 @@ public class BogglePlayer {
 
         if(length == 3 || length == 4){
             score = 1;
-        }
-        else if(length == 5){
+        } else if(length == 5){
             score = 2;
-        }
-        else if(length == 6){
+        } else if(length == 6){
             score = 3;
-        }
-        else if(length == 7){
+        } else if(length == 7){
             score = 5;
-        }
-        else if(length >= 8){
+        } else if(length >= 8){
             score = 11;
         }
         return score;

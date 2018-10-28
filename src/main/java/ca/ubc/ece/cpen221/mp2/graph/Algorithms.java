@@ -74,8 +74,7 @@ public class Algorithms {
 		if(table.get(reference.get(search)).contains(b)){
 			record.add(count);
 			return;
-		}
-		else{
+		} else{
 			visited[reference.get(search)] = true;
 			for(Vertex temporary: table.get(reference.get(search))){
 				if(visited[reference.get(temporary)] == false) {
@@ -172,8 +171,7 @@ public class Algorithms {
 		if(count == temporary.size() || temporary.size() == 0){
 			stepback++;
 			DFSgenerator(storage.get(storage.size()-stepback),table,visited,reference,storage,stepback,maxlength);
-		}
-		else{
+		} else{
 			for(Vertex v: temporary){
 				if (visited[reference.get(v)] == false) {
 					stepback = 1;
@@ -362,8 +360,7 @@ public class Algorithms {
 		if(table.get(reference.get(search)).contains(end)){
 			differentlengths.add(count);
 			return;
-		}
-		else{
+		} else{
 			visited[reference.get(search)] = true;
 			for(Vertex temporary: table.get(reference.get(search))){
 				if(visited[reference.get(temporary)] == false) {
