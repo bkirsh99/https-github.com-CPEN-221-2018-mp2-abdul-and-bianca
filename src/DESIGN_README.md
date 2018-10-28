@@ -1,4 +1,5 @@
-#For this MP, we have done as follows:
+For this MP, we have done as follows:
+
 1. For *AdjacencyListGraph*:
 - In the constructor:
   - We take in no arguments and initialize a new HashMap called allLists
@@ -32,9 +33,9 @@
 3. For *Algorithms*:
 - In shortestdistance:
   - We record information about the imported graph, call a recursive function to get all the distances between vertex a and b, and then get the minimum of all these distances
-- In depthFirstSearch
+- In depthFirstSearch:
   - We record information about the imported graph, call a recursive function that returns the DFS sequence. If graphs are disconnnected, we return the DFS sequence of all of them seperately
-- In breadthFirstSearch
+- In breadthFirstSearch:
   - We record information about the imported graph, we used a queue and a Boolean array to keep track of the vertices that we already performed the BFS on. We loop the main computation part so that we can get the BFS starting from every vertex in the graph. Add the end of every loop, we add the BFS analysis starting from that vertex to a Set.
 - In centre:
   - We record information about the imported graph, then we get every possible distance between a changing start and end vertex and then get the minimum of those. This would give us the minimum of the maximum distances, hence the centre of the graph
@@ -42,13 +43,13 @@
   - We record information about the imported graph, call a recursive function that would get all possible distances between vertex start and end (which both change to cover all verteces) and then get the maximum of that, which would give us the diameter.
 
 4. For *BogglePlayer*:
-- In getAllValidWords
+- In getAllValidWords:
   - We build an adjacencyListGraph representation of the board.
   - We added vertices to the graph using their char representation (or string representation “Qu” in the case of ‘Q’) as labels and coordinate pair as content.
   - We added edges to all vertices, including wrap arounds. In this way, a 4 x 4 board would be represented by a graph with two extra rows and two extra columns. The bottom-most row on the board would reappear as the top-most layer in the graph, while the top-most row on the board would appear as the bottom-most layer in the graph, and so forth.
   - We used recursion to get all possible paths for every possible combination of starting and ending vertex. The paths formed words, and if their length was >= 3 and was contained in the dictionary, we added them to a Set of validWords.
   - We return the set of valid words once recursion is done.
-- In getMaximumScore and scoreOf
+- In getMaximumScore and scoreOf:
   - We called a helper method getScore that computed the score of any word, whether it was a valid word or not.
   - To assure that the word was valid, we called getAllValidWords on the board and checked if the word was contained in the Set. If not, we returned 0. If yes, we returned the score obtained from getScore.
   - For getMaximumScore, we looped this procedure and kept adding the score of each word until we checked all the valid words.
