@@ -24,7 +24,7 @@ public class AdjacencyListGraph implements Graph {
     // Abstraction Function:
     //   represents the adjacency list of graph
 
-    //This is the constructor gor AdjacencyListGraph
+    //This is the constructor for AdjacencyListGraph
     public AdjacencyListGraph() {
         allLists = new HashMap<>();
     }
