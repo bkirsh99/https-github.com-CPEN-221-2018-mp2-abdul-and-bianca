@@ -48,6 +48,25 @@ public class Vertex {
     }
 
     /**
+     * Obtain the content associated with a vertex
+     *
+     * @return content associated with this vertex
+     */
+    public String getContent() {
+        return content;
+    }
+
+    /**
+     * Set the content associated with this vertex
+     *
+     * @param content to be used to set the content associated with the vertex
+     */
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+
+    /**
      * Check equality of vertices. This method overrides equals( ) in Object.
      *
      * @return true if this vertex is equal to the obj otherwise return false
